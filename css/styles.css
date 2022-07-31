@@ -36,6 +36,7 @@ ul, h1, h2, h3, p {
     list-style: none;
     margin: 0;
     padding: 0;
+    margin-left: auto;
 }
 
 a {
@@ -68,7 +69,6 @@ header {
     height: 80px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 nav {
@@ -133,17 +133,15 @@ nav {
 /* Герой */
 
 .hero {
-    height: 600px;
+    padding: 200px 0;
+    text-align: center;
     background-color: var(--secondary-background-color);
 }
 
-.hero-content {
+.hero-title {
     width: 696px;
-    height: 120px;
-
     margin-left: auto;
     margin-right: auto;
-    padding-top: 195px;
 }
 
 h1 {
@@ -161,16 +159,15 @@ h1 {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
 
-    margin-top: 35px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 30px;
+
+    border: none;
+    width: 200px;
+    height: 50px;
 
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
 
     cursor: pointer;
@@ -226,7 +223,7 @@ h3 {
 /* Чем мы занимаемся */
 
 .work {
-    margin-top: 94px;
+    padding-top: 0;
 }
 
 .our-works {
@@ -251,12 +248,19 @@ h3 {
     display: flex;
 }
 
+.cowokers-items {
+    background-color: var(--primary-white-color);
+
+    border: 1px solid #EEEEEE;
+    border-radius: 0px 0px 4px 4px;
+}
+
 .cowokers-items:not(:first-child) {
     margin-left: 30px;
 }
 
 .cowokers-name {
-    padding-top: 30px;
+    margin-top: 30px;
 
     font-weight: 500;
     font-size: 16px;
@@ -266,8 +270,8 @@ h3 {
 }
 
 .cowokers-profession {
-    padding-top: 10px;
-    padding-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 30px;
 
     font-size: 16px;
     line-height: 1.19;
@@ -278,10 +282,8 @@ h3 {
 
 footer {
     background-color: var(--secondary-background-color);
-}
 
-.footer {
-    padding: 60px;
+    padding: 60px 0;
 }
 
 .white {
@@ -289,6 +291,8 @@ footer {
 }
 
 .adress {
+    margin-top: 20px;
+
     color: var(--primary-white-color);
 
     line-height: 24px;
@@ -296,6 +300,8 @@ footer {
 }
 
 .contacts {
+    margin-top: 9px;
+
     color: rgba(255, 255, 255, 0.6);
 
     line-height: 24px;
@@ -321,6 +327,8 @@ footer {
 
 
 .portfolio-button .item {
+    padding: 6px 22px;
+
     color: var(--title-text-color);
     background-color: var(--secondary-color);
 
@@ -332,6 +340,7 @@ footer {
     text-align: center;
     letter-spacing: 0.03em;
     border: 0;
+    border-radius: 4px;
 
     cursor: pointer;
 }
@@ -357,6 +366,8 @@ footer {
 }
 
 .our-projects-type {
+    margin-top: 4px;
+
     font-size: 16px;
     line-height: 1.88;
 }
